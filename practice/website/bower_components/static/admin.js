@@ -7,7 +7,7 @@ $(function(){
 		
 		$.ajax({
 			type: 'DELETE',
-			url: 'admin/movie/list?id=' + id
+			url: '/admin/list?id=' + id
 		})
 		.done(function(results){ //删除后希望服务器返回状态
 			if(results.success === 1){ //为1说明删除成功
